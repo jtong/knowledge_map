@@ -12,8 +12,10 @@ graph ruby_knowlege_map {
   Web_MVC -- Routing;
   Routing -- "routes.rb" -- RubyOnRails;
   Routing -- "build-in method in Controller" -- Sinatra,Padrino
-  Web_MVC -- write_MVC_in_framework -- view -- haml,erb,slim,json,rss,xml,text,file_download;
-  Web_MVC -- render -- layout;
+  Web_MVC -- write_MVC_in_framework -- view -- render -- html,json,rss,xml,text,file_download;
+  html -- template_engine -- haml,erb,slim;
+  html -- layout;
+  view -- js合并与压缩,css合并与压缩;
   RubyOnRails -- layout -- Padrino;
   Web_MVC -- Web_MVC_Framework;
   Web_MVC_Framework -- RubyOnRails;
@@ -39,5 +41,5 @@ graph ruby_knowlege_map {
   Build -- thor;
   依赖管理 -- bundler -- Gemfile;
   依赖管理 -- rvm -- gemset;
-  Ruby_重构;
+  Ruby_重构;  
 }	
