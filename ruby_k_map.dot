@@ -1,0 +1,43 @@
+graph ruby_knowlege_map {
+  面向对象编程 -- Ruby的对象写法;
+  Ruby的对象写法 -- 初始化;
+  Ruby的对象写法 -- 继承;
+  Ruby的对象写法 -- 覆盖;
+  Ruby的对象写法 -- 命名空间_module;
+  元编程 -- include_methods;
+  元编程 -- method_missing;
+  元编程 -- 打开类;
+  元编程 -- 静态元编程_generator -- thor;
+  集合操作库_lambda -- Ruby_原生;
+  Web_MVC -- Routing;
+  Routing -- "routes.rb" -- RubyOnRails;
+  Routing -- "build-in method in Controller" -- Sinatra,Padrino
+  Web_MVC -- write_MVC_in_framework -- view -- haml,erb,slim,json,rss,xml,text,file_download;
+  Web_MVC -- render -- layout;
+  RubyOnRails -- layout -- Padrino;
+  Web_MVC -- Web_MVC_Framework;
+  Web_MVC_Framework -- RubyOnRails;
+  Web_MVC_Framework -- Padrino;
+  Web_MVC_Framework -- Sinatra;
+  TDD -- test_skill;
+  test_skill -- "Test Controller without view render" -- test_Padrino, test_RubyOnRails, test_Sinatra;
+  test_skill -- "Test through URL without view render" -- test_Padrino, test_RubyOnRails, test_Sinatra;
+  test_skill -- "test meta programming";
+  test_framework -- Ruby_test_framework -- rspec;
+  职责划分 -- controller不实现任何功能方法，只通过调用功能方法实现逻辑控制。;
+  职责划分 -- view有自己的逻辑，controller只向view提供指示性标志变量和数据源。;
+  view有自己的逻辑，controller只向view提供指示性标志变量和数据源。 -- view_helper;
+  view有自己的逻辑，controller只向view提供指示性标志变量和数据源。 -- directive;
+  RubyOnRails -- view_helper;
+  Padrino -- view_helper;
+  Ruby_设计模式 -- OO设计模式;
+  OO设计模式 -- 面向对象编程;
+  ORM -- active_record;
+  RubyOnRails -- db_migration;
+  db_migration -- Padrino;
+  Build -- rake;
+  Build -- thor;
+  依赖管理 -- bundler -- Gemfile;
+  依赖管理 -- rvm -- gemset;
+  Ruby_重构;
+}	

@@ -1,0 +1,32 @@
+graph javascript_knowlege_map {
+  面向对象 -- Javascript的对象写法;
+  面向对象 -- OO设计模式;
+  underscore;
+  nodejs;
+  directive -- angular_js;
+  Javascript_test_framework -- Jasmine;
+  Javascript_test_framework -- qunit;
+  Web_MVC -- Web_MVC_Framework;
+  Web_MVC -- Routing;
+  Web_MVC_Framework -- angular_js;
+  Routing -- "$routeProvider";
+  "$routeProvider" -- angular_js;
+  TDD -- test_framework;
+  test_framework -- Javascript_test_framework;
+  view有自己的逻辑，controller只向view提供指示性标志变量和数据源。 -- directive;
+  Javascript_设计模式 -- OO设计模式;
+  CSS -- Scss;
+  CSS -- Sass;
+  CSS -- CSS3;
+  HTML -- HTML5;
+  HTML -- Haml;
+  HTML -- erb;
+  HTML -- jade;
+  HTML -- slim;
+  HTML5 -- localStorage;
+  subgraph cluster0{
+    coral -- angular_js;
+    coral -- coral_ui;
+    label = "mobile"
+  }
+}	

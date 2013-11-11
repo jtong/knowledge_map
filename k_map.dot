@@ -1,0 +1,91 @@
+graph knowlege_map {
+  一次只做一件事 -- 一个函数只做一件事;
+  一次只做一件事 -- 一次提交只做一件事;
+  一次只做一件事 -- 一个类只有一个职责;
+  面向过程编程 -- 函数_变量命名清晰_见名知意;
+  面向过程编程 -- 函数_变量命名清晰_不使用缩写;
+  面向过程编程 -- 函数不超过15行;
+  面向过程编程 -- 不要超过三级缩进;
+  函数式编程 -- 用lambda取代for和while;
+  函数式编程 -- flow_api;
+
+  面向对象编程 -- Javascript的对象写法;
+  subgraph cluster_javascript{
+	  Javascript的对象写法;
+	  underscore;
+	  nodejs;
+	  directive -- angular_js;
+    Javascript_test_framework -- Jasmine;
+    Javascript_设计模式;
+	  color = blue;
+  	label = "Javascript"
+  }
+  集合操作库_lambda -- underscore;
+  集合操作库_lambda -- LINQ;
+  降低圈复杂度 -- 集合操作库_lambda;
+  MVC -- Web_MVC;
+  Web_MVC -- Routing;
+  Web_MVC -- write_MVC_in_framework;
+  Web_MVC -- render;
+  Web_MVC -- Web_MVC_Framework;
+  Web_MVC_Framework -- angular_js;
+  Web_MVC_Framework -- RubyOnRails;
+  Web_MVC_Framework -- Padrino;
+  Web_MVC_Framework -- Sinatra;
+  Web_MVC_Framework -- Zend_Framework;
+  PHP -- Zend_Framework;
+  Ruby -- RubyOnRails;
+  Ruby -- Padrino;
+  Ruby -- Sinatra;
+  Java -- Android;
+  TDD -- 七步提交法;
+  TDD -- unit_test;
+  TDD -- integration_test;
+  TDD -- automation_functional_test;
+  TDD -- test_framework;
+  test_framework -- Javascript_test_framework;
+  TDD -- BDD;
+  BDD -- cucumber;
+  Objective_C;
+  Android;
+  单文件200行;
+  职责划分 -- controller不实现任何功能方法，只通过调用功能方法实现逻辑控制。;
+  职责划分 -- view有自己的逻辑，controller只向view提供指示性标志变量和数据源。;
+  view有自己的逻辑，controller只向view提供指示性标志变量和数据源。 -- view_helper;
+  view有自己的逻辑，controller只向view提供指示性标志变量和数据源。 -- directive;
+  RubyOnRails -- view_helper;
+  Padrino -- view_helper;
+  Java_设计模式,Javascript_设计模式,Ruby_设计模式,PHP_设计模式,Objective_C_设计模式 -- OO设计模式;
+  Java -- Java_设计模式;
+  Ruby -- Ruby_设计模式;
+  Objective_C -- Objective_C_设计模式;
+  OO设计模式 -- 面向对象编程;
+  Ruby -- active_record;
+  ORM -- active_record;
+  subgraph cluster_HTTP{
+    HTTP协议 -- Web_MVC;
+    HTTP协议 -- POST方法;
+    HTTP协议 -- Get方法;
+    HTTP协议 -- Rest_style_url;
+    HTTP协议 -- Session和Cookie;
+    HTTP协议 -- Redirect和forward;
+    label = "HTTP协议"
+  }
+  CSS -- Scss;
+  CSS -- Sass;
+  CSS -- CSS3;
+  HTML -- HTML5;
+  HTML -- Haml;
+  HTML -- erb;
+  Build -- ant;
+  Build -- gradle;
+  Build -- Maven;
+  Maven -- Java;
+  gradle -- Java;
+  ant -- Android;
+  RubyOnRails -- db_migration;
+  db_migration -- Padrino;
+  db_migration -- PHP;
+  Android -- db_migration;
+  
+}	
