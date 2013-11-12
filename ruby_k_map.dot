@@ -10,7 +10,7 @@ graph ruby_knowlege_map {
   元编程 -- 静态元编程_generator -- thor;
   元编程 -- 函数式编程;
   集合操作库_lambda -- Ruby_原生;
-  函数式编程 - 传Block或Proc, 闭包;
+  函数式编程 -- 传Block或Proc, 闭包;
   Web_MVC -- Routing -- "wild characters" -- "routes.rb", "build-in method in Controller";
   Routing -- "routes.rb" -- RubyOnRails;
   Routing -- "build-in method in Controller" -- Sinatra,Padrino
@@ -24,7 +24,7 @@ graph ruby_knowlege_map {
   RubyOnRails -- layout -- Padrino;
   Web_MVC -- Web_MVC_Framework; 
   Web_MVC_Framework -- RubyOnRails;
-  Web_MVC_Framework -- Padrino;
+  Web_MVC_Framework -- Padrino; 
   Web_MVC_Framework -- Sinatra;
   AOP -- filter, middleware;
   filter -- RubyOnRails;

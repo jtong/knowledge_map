@@ -3,7 +3,7 @@ graph javascript_knowlege_map {
   面向对象 -- OO设计模式;
   函数式编程 -- 集合操作库_lambda -- underscore;
   函数式编程 -- 传函数,闭包;
-  nodejs;
+  serverside_js -- v8 -- nodejs -- express_js;
   directive -- angular_js;
   Javascript_test_framework -- Jasmine;
   Javascript_test_framework -- qunit;
