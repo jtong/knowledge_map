@@ -8,19 +8,26 @@ graph ruby_knowlege_map {
   元编程 -- method_missing;
   元编程 -- 打开类;
   元编程 -- 静态元编程_generator -- thor;
+  元编程 -- 函数式编程 -- Block, Proc;
   集合操作库_lambda -- Ruby_原生;
-  Web_MVC -- Routing;
+  Web_MVC -- Routing -- "wild characters" -- "routes.rb", "build-in method in Controller";
   Routing -- "routes.rb" -- RubyOnRails;
   Routing -- "build-in method in Controller" -- Sinatra,Padrino
   Web_MVC -- write_MVC_in_framework -- view -- render -- html,json,rss,xml,text,file_download;
-  html -- template_engine -- haml,erb,slim;
-  html -- layout;
+  Web_MVC -- 子系统 -- engine,app;
+  engine -- RubyOnRails;
+  app -- Padrino;
+  html -- template_engine -- language -- haml,erb,slim;
+  template_engine --  feature -- layout;
   view -- js合并与压缩,css合并与压缩;
   RubyOnRails -- layout -- Padrino;
-  Web_MVC -- Web_MVC_Framework;
+  Web_MVC -- Web_MVC_Framework; 
   Web_MVC_Framework -- RubyOnRails;
   Web_MVC_Framework -- Padrino;
   Web_MVC_Framework -- Sinatra;
+  AOP -- filter, middleware;
+  filter -- RubyOnRails;
+  middleware -- Sinatra, Padrino;
   TDD -- test_skill;
   test_skill -- "Test Controller without view render" -- test_Padrino, test_RubyOnRails, test_Sinatra;
   test_skill -- "Test through URL without view render" -- test_Padrino, test_RubyOnRails, test_Sinatra;
@@ -39,7 +46,10 @@ graph ruby_knowlege_map {
   db_migration -- Padrino;
   Build -- rake;
   Build -- thor;
-  依赖管理 -- bundler -- Gemfile;
-  依赖管理 -- rvm -- gemset;
-  Ruby_重构;  
+  依赖管理 -- bundler -- Gemfile -- gem;
+  依赖管理 -- rvm -- gemset -- gem;
+  包 -- gem -- "gem 开发" -- 普通gem, 带命令行gem,带资源文件gem;
+  Ruby_重构;
+  Ruby_正则表达式;
+  Debug -- Postman, "Debug Rails"; 
 }	
