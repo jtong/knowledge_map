@@ -1,7 +1,8 @@
 graph javascript_knowlege_map {
   面向对象 -- Javascript的对象写法;
   面向对象 -- OO设计模式;
-  underscore;
+  函数式编程 -- 集合操作库_lambda -- underscore;
+  函数式编程 -- 传函数,闭包;
   nodejs;
   directive -- angular_js;
   Javascript_test_framework -- Jasmine;
@@ -11,22 +12,35 @@ graph javascript_knowlege_map {
   Web_MVC_Framework -- angular_js;
   Routing -- "$routeProvider";
   "$routeProvider" -- angular_js;
+  "$service" -- angular_js;
+  ajax -- "$http", "$.ajax", "native_ajax";
+  "$http" -- angular_js;
+  "$.ajax" -- jQuery;
+  选择器编程 -- jQuery;
+  异步编程 -- Rxjs, promisejs, "q.js", async;
   TDD -- test_framework;
   test_framework -- Javascript_test_framework;
   view有自己的逻辑，controller只向view提供指示性标志变量和数据源。 -- directive;
   Javascript_设计模式 -- OO设计模式;
+  Javascirpt_正则表达式;
   CSS -- Scss;
   CSS -- Sass;
   CSS -- CSS3;
+  CSS_Debug -- 浏览器兼容性 -- 在线多浏览器快照服务;
   HTML -- HTML5;
   HTML -- Haml;
   HTML -- erb;
   HTML -- jade;
   HTML -- slim;
   HTML5 -- localStorage;
+  Build -- grunt;
+  包依赖 -- npm,requirejs;
   subgraph cluster0{
     coral -- angular_js;
     coral -- coral_ui;
+    coral -- cordova -- call_native_plugin;
     label = "mobile"
-  }
+  } 
+  Javascript_Debug -- "Chrome Developer tool", "Firefox firebug", "intelliJ javascript debug plugin";
+  CSS_Debug -- "Chrome Developer tool", "Firefox firebug", "IE Developer tool"; 
 }	

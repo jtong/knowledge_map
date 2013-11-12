@@ -8,14 +8,15 @@ graph ruby_knowlege_map {
   元编程 -- method_missing;
   元编程 -- 打开类;
   元编程 -- 静态元编程_generator -- thor;
-  元编程 -- 函数式编程 -- Block, Proc;
+  元编程 -- 函数式编程;
   集合操作库_lambda -- Ruby_原生;
+  函数式编程 - 传Block或Proc, 闭包;
   Web_MVC -- Routing -- "wild characters" -- "routes.rb", "build-in method in Controller";
   Routing -- "routes.rb" -- RubyOnRails;
   Routing -- "build-in method in Controller" -- Sinatra,Padrino
   Web_MVC -- write_MVC_in_framework -- view -- render -- html,json,rss,xml,text,file_download;
-  Web_MVC -- 子系统 -- engine,app;
-  engine -- RubyOnRails;
+  Web_MVC -- 子系统 -- rails_engine,app;
+  rails_engine -- RubyOnRails;
   app -- Padrino;
   html -- template_engine -- language -- haml,erb,slim;
   template_engine --  feature -- layout;

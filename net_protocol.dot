@@ -1,0 +1,23 @@
+graph new_protocol_knowlege_map {
+  HTTP协议 -- Web_MVC;
+  HTTP协议 -- POST方法;
+  HTTP协议 -- Get方法;
+  HTTP协议 -- Rest_style_url;
+  HTTP协议 -- Session和Cookie;
+  HTTP协议 -- Redirect和forward;
+  HTTPS协议;
+  Socket协议;
+  FTP协议;
+  苹果itunes协议;
+  SMTP协议;
+  POP3协议;
+
+  subgraph cluster0{
+    nginx;
+    apache;
+    squid;
+    smtp_server -- Linux自带;
+    ftp_server -- Linux自带;
+    label = "基于协议的应用"
+  }   
+}	

@@ -22,7 +22,7 @@ graph craftmanship_knowlege_map {
   TDD -- 七步提交法;
   TDD -- unit_test -- mock技术 -- mock,spy,fake,stub,dummy;
   TDD -- integration_test;
-  TDD -- automation_functional_test;
+  TDD -- automation_functional_test -- test_driver;
   TDD -- test_framework;
   TDD -- BDD;
   BDD -- cucumber;
@@ -42,4 +42,9 @@ graph craftmanship_knowlege_map {
   持续集成 -- "Build pipeline" ,"Build Stage";
   "Infrastructure as code"
   "Convension over specification";
+  快捷键 -- IDEA家族快捷键,Eclipse快捷键,Sublime快捷键,"NotePad++快捷键", WindowsGUI快捷键, LinuxGUI快捷键, vim快捷键, emacs快捷键;
+  命令行 -- Linux命令行,Windows命令行,其他库命令行;
+  能源有限设备编程 -- 省电策略,运算策略;
+  数据结构 -- 堆,栈,队列,链表,列表,有向列表,树,图;
+  算法;
 }	
