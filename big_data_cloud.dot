@@ -1,0 +1,10 @@
+graph big_data_cloud_knowlege_map {
+  OpenStack;
+  CloudFoundry;
+  KVM;
+  阿里云;
+  亚马逊S3;
+  Linode;
+
+  Hadoop;
+}	

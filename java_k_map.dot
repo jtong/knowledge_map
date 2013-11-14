@@ -4,7 +4,7 @@ graph java_knowlege_map {
   发布 -- war,ear,jar;
   集合操作库_lambda -- "lambda,目前还要靠外部库";
   集合操作库_lambda -- LINQ;
-  降低圈复杂度 -- 集合操作库_lambda,OO设计模式,enum;
+  降低圈复杂度 -- 集合操作库_lambda,OO设计模式,enum; 
   MVC -- Web_MVC;
   Web_MVC -- Routing;
   Web_MVC -- write_MVC_in_framework;
@@ -32,7 +32,7 @@ graph java_knowlege_map {
   职责划分 -- controller不实现任何功能方法，只通过调用功能方法实现逻辑控制。;
   职责划分 -- view有自己的逻辑，controller只向view提供指示性标志变量和数据源。;
   view有自己的逻辑，controller只向view提供指示性标志变量和数据源。 -- java_bean;
-  Java_设计模式 -- OO设计模式;
+  Java_设计模式 -- OO设计模式; 
   OO设计模式 -- 面向对象编程;
   ORM -- Hiberate, ibatis;
   Hibernate -- HQL,"Spring Annotation config","Spring XML config";
@@ -47,4 +47,4 @@ graph java_knowlege_map {
   Java_Debug -- intelliJ, Debug_web;
   Web_Container --tomcat,weblogic, applicationserver;
   tomcat -- JBOSS;
-}	
+}	 

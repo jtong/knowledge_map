@@ -9,10 +9,10 @@ graph new_protocol_knowlege_map {
   Socket协议;
   FTP协议;
   苹果itunes协议;
-  SMTP协议;
+  SMTP协议; 
   POP3协议;
 
-  subgraph cluster0{
+  subgraph cluster0{ 
     nginx;
     apache;
     squid;
@@ -20,4 +20,4 @@ graph new_protocol_knowlege_map {
     ftp_server -- Linux自带;
     label = "基于协议的应用"
   }   
-}	
+} 

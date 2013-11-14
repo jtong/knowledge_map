@@ -14,7 +14,7 @@ graph javascript_knowlege_map {
   "$routeProvider" -- angular_js;
   "$service" -- angular_js;
   ajax -- "$http", "$.ajax", "native_ajax";
-  "$http" -- angular_js;
+  "$http" -- angular_js; 
   "$.ajax" -- jQuery;
   选择器编程 -- jQuery;
   异步编程 -- Rxjs, promisejs, "q.js", async;
@@ -32,8 +32,8 @@ graph javascript_knowlege_map {
   HTML -- erb;
   HTML -- jade;
   HTML -- slim;
-  HTML5 -- localStorage;
-  Build -- grunt;
+  HTML5 -- localStorage; 
+  Build -- grunt; 
   包依赖 -- npm,requirejs;
   subgraph cluster0{
     coral -- angular_js;

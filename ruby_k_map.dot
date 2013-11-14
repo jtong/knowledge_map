@@ -1,4 +1,5 @@
 graph ruby_knowlege_map {
+  node [fontname="Verdana", fontsize= 24, size="30,30"];
   面向对象编程 -- Ruby的对象写法;
   Ruby的对象写法 -- 初始化;
   Ruby的对象写法 -- 继承;
@@ -53,4 +54,8 @@ graph ruby_knowlege_map {
   Ruby_重构;
   Ruby_正则表达式;
   Debug -- Postman, "Debug Rails"; 
+  app规范 -- rack -- Rails_Deploy -- ruby_http_server -- passenger -- nginx,apache;
+  ruby_http_server -- unicorn;
+  Rails_Deploy -- automation -- capstrino;
+  ruby_http_server; 
 }	

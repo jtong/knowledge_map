@@ -8,4 +8,4 @@ graph database_k_map {
   事务 -- ACID, 事务的隔离级别; 
   StoredProcedure -- Oracle, SQLServer,Mysql;
   NoSQL -- MongoDB, Neo4j, CouchDB;
-}	
+} 
