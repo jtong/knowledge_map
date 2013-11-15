@@ -1,4 +1,5 @@
 graph craftmanship_knowlege_map {
+  compound=true;
   一次只做一件事 -- 一个函数只做一件事;
   一次只做一件事 -- 一次提交只做一件事;
   一次只做一件事 -- 一个类只有一个职责; 
@@ -30,7 +31,7 @@ graph craftmanship_knowlege_map {
   企业架构模式 -- MVC,ORM,Queue;
   职责划分 -- controller不实现任何功能方法，只通过调用功能方法实现逻辑控制。;
   职责划分 -- view有自己的逻辑，controller只向view提供指示性标志变量和数据源。;
-  Java_设计模式,Javascript_设计模式,Ruby_设计模式,PHP_设计模式,Objective_C_设计模式 -- OO设计模式 -- 面向对象编程;
+  Java_设计模式实现,Javascript_设计模式实现,Ruby_设计模式实现,PHP_设计模式实现,Objective_C_设计模式实现 -- OO设计模式 -- 面向对象编程;
   消息分发机制;
   生产者消费者;
   db_migration;

@@ -1,0 +1,7 @@
+graph command_line_knowlege_map {
+  Linux命令行 -- ls,grep,history, chmod,ack,top,执行shell脚本, "cd ~", "cd ..", "cd /", "rm", "cp", "mv", "mkdir";
+  Windows命令行 -- batch_file, PowerShell, "dir", cd, "c:", "del", "rd", "md", "find";
+  Git命令行 -- "git checkout", "git reset", "git clone", "git commit", "git push", "git rm", "git add -u";
+  vim快捷键 -- i, "/", dd, Ndd, yy,p,nG,dw,cw, "d$";
+  emac快捷键;
+} 
