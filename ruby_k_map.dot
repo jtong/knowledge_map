@@ -1,5 +1,5 @@
 graph ruby_knowlege_map {
-  node [fontname="Verdana", fontsize= 24, size="30,30"];
+  node [fontname="Verdana", fontsize= 28, size="30,30"];
   面向对象编程 -- Ruby的对象写法;
   Ruby的对象写法 -- 初始化;
   Ruby的对象写法 -- 继承;

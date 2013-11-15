@@ -1,4 +1,5 @@
 graph new_protocol_knowlege_map {
+  node [fontname="Verdana", fontsize= 28, size="30,30"];
   HTTP协议 -- Web_MVC;
   HTTP协议 -- POST方法;
   HTTP协议 -- Get方法;

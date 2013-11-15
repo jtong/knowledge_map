@@ -1,4 +1,5 @@
 graph database_k_map {
+  node [fontname="Verdana", fontsize= 28, size="30,30"];
   关系型数据库 -- Mysql, Oracle, SQLServer, sqlite3, Postgresql;
   SQL -- 查询语言 -- 关系型数据库;
   关系型数据库 -- 注意数据类型的微小差异,注意逐渐策略的微小差异;

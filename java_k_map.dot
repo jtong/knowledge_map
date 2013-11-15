@@ -1,4 +1,5 @@
 graph java_knowlege_map {
+  node [fontname="Verdana", fontsize= 28, size="30,30"];
   面向对象编程 -- 接口,抽象类,实现类,构造器,重载,覆盖,this, super,访问控制,package,匿名类,内部类,enum;
   library -- jar;
   发布 -- war,ear,jar;

@@ -1,4 +1,6 @@
 graph design_pattern_knowlege_map {
+  node [fontname="Verdana", fontsize= 28, size="30,30"];
+  compound=true; 
   subgraph cluster_oo{
     类,实例,方法,继承,接口,抽象类,包,覆盖,重载,构造,初始化;
     方法 -- 类方法,实例方法, 抽象方法, 接口方法; 
